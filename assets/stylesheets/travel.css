@@ -19,7 +19,7 @@ Target the body element and set some common styles for the page:
 body {
       background-color: black;
       color: white;
-      font: helvetica;
+      font-family: Arial, Helvetica, sans-serif;
       font-size: 16px;
 }
 /*
@@ -56,8 +56,7 @@ target the elements with a class of page-row and set the following:
   width: 100%;
   clear: both;
   padding: 5%;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin: 2% 0;
 }
 
 /*
@@ -81,10 +80,10 @@ target the elements with a class of card and set the following:
   padding-top: 15%;
   float: left;
   background-color: white;
-  color: black;
   text-align: center;
+  color: black;
   background-size: contain;
-  background: no-repeat;
+  background-repeat: no-repeat;
 }
  
 /*
@@ -101,8 +100,8 @@ target the element with the id of hero and set the following
   width: 100%;
   height: 450px;
   background-size: cover;
-  background: no-repeat;
-  background-image: url(../../assets/images/travel_hero.jpg);
+  background-repeat: no-repeat;
+  background-image: url("../images/travel_hero.jpg");
   background-image: fixed;
 }
 
@@ -112,7 +111,7 @@ target the element with the id of spain
 */
 
 #spain {
-  background-image: url(../images/spain_flag.svg);
+  background-image: url("../images/spain_flag.svg");
 }
 
 /*
@@ -121,7 +120,7 @@ target the element with the id of italy
 */
 
 #italy {
-  background-image: url(../images/italy_flag.svg);
+  background-image: url("../images/italy_flag.svg");
 }
 
 /*
@@ -130,7 +129,7 @@ target the element with the id of aruba
 */
 
 #aruba {
-  background-image: url(../images/aruba_flag.svg);
+  background-image: url("../images/aruba_flag.svg");
 }
 
 /*
@@ -139,7 +138,7 @@ target the element with the id of chile
 */
 
 #chile {
-  background-image: url(../images/chile_flag.svg);
+  background-image: url("../images/chile_flag.svg");
 }
 
 
@@ -192,10 +191,7 @@ nav {
 
 .nav-link {
   display: inline;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 5px 15px;
 }
 
 /*
@@ -217,7 +213,7 @@ header a {
 */
 
 table {
-  border: solid 2px black;
+  border: solid black 2px;
   border: collapse;
   width: 100%;
 }
@@ -227,7 +223,7 @@ table {
   - give a 2px black solid border to the table
 */
 
-tr td th {
+tr, td, th {
   border: solid 2px black;
 }
 
@@ -258,7 +254,7 @@ th {
   - center align the text
 */
 
-#travel-table > h3 {
+#travel-table h3 {
   text-align: center;
 }
 
